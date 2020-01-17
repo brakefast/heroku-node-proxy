@@ -1,68 +1,411 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>禁闻聚合</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<style>
-body {
-	background-color: #eff0f2;
-}
-div img {
-	width: 30%;
-	margin: 1px;
-	
-}
-div .category {
-	margin-top: 20px;
-}
-div .title{
-	font-family: sans-serif;
-	font-size: 20px;
-	font-weight: bold；
-}
-</style>
-</head>
-<body>
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://tabagotchi.com/ -->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Google Tag Manager -->
+		<script async="" src="./js/gtm.js"></script>
+		<script>
+			(
+				function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+					'gtm.start':new Date().getTime(),event:'gtm.js',
+				});
+				var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+				j.async=true;
+				j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+				f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-P7LNZ38');
+		</script>
+		<!-- End Google Tag Manager -->
 
-<div class="category">
-<div class="title">新闻媒体<div>
-<hr/>
-<a href="./proxy/http://www.epochtimes.com/gb/"><img src="logo/epochtimes.png" width="30%" alt="大纪元时报"/></a>
-<a href="./proxy/https://www.ntdtv.com/gb/"><img src="logo/ntdtv.png" width="30%" alt="新唐人电视台"/></a>
-<a href="./proxy/http://www.soundofhope.org/"><img src="logo/soh.png" width="30%" alt="希望之声电台"/></a>
-<a href="./proxy/https://www.bbc.com/zhongwen/simp"><img src="logo/bbc.png" width="30%" alt="BBC中文网"/></a>
-<a href="./proxy/https://cn.reuters.com/"><img src="logo/reuters.png" width="30%" alt="路透新闻网"/></a>
-<a href="./proxy/https://cn.wsj.com/"><img src="logo/wsj.png" width="30%" alt="华尔街日报"/></a>
-<a href="./proxy/http://www.wujieliulan.com/"><img src="logo/wujie.png" width="30%" alt="无界浏览"/></a>
-<a href="http://159.89.157.101/"><img src="logo/ntdtv-hls.jpg" width="30%" alt="新唐人直播"/></a>
-<a href="./proxy/https://www.rfa.org/mandarin/"><img src="logo/rfa.jpg" width="30%" alt="自由亚洲电台"/></a>
-</div>
-<div class="category">
-<div class="title">翻墙必看<div>
-<hr/>
-<a href="http://gfw-breaker.win/videos/truth.html"><img src="logo/truth.png" width="30%" alt="法轮功真相"/></a>
-<a href="http://gfw-breaker.win/videos/res/Organs/"><img src="logo/organs.png" width="30%" alt="器官活摘"/></a>
-<a href="./proxy/http://www.zhuichaguoji.org/"><img src="logo/zcgj.jpg" width="30%" alt="追查国际"/></a>
-<a href="http://gfw-breaker.win/videos/709/"><img src="logo/709.png" width="30%" alt="维权律师大抓捕"/></a>
-<a href="http://gfw-breaker.win/videos/ccp.html"><img src="logo/ccp.jpg" width="30%" alt="共产党百年历史"/></a>
-<a href="http://gfw-breaker.win/videos/res/TradeWar/"><img src="logo/TradeWar.png" width="30%" alt="中美贸易
-战"/></a>
-</div>
+		<meta name="description" content="A chrome extension that helps you beat tab anxiety to be more productive. Fewer tabs = happy Tabagotchi. More tabs = angry Tabagotchi. ">
+		<meta name="keywords" content="Tamagotchi, Tabagotchi, Breather, productivity, tab anxiety, focus, work, tabs, browser, chrome, extension">
+		<meta name="author" content="Breather">
+		<meta property="og:title" content="Tabagotchi by Breather">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://tabagotchi.com">
+		<meta property="og:description" content="A chrome extension that helps you beat tab anxiety to be more productive. Fewer tabs = happy Tabagotchi. More tabs = angry Tabagotchi.">
+		<meta property="og:site_name" content="Tabagotchi by Breather">
+		<meta property="og:image" content="http://tabagotchi.com/img/facebook.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Tabagotchi by Breather">
+		<meta name="twitter:description" content="A chrome extension that helps you beat tab anxiety to be more productive. Fewer tabs = happy Tabagotchi. More tabs = angry Tabagotchi.">
+		<meta name="twitter:image" content="http://tabagotchi.com/img/facebook.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<div class="category">
-<div class="title">油管节目<div>
-<hr/>
-<a href="http://159.89.157.101/tianliang/index.html"><img src="logo/tianliang.png" width="30%" alt="天亮时分"/></a>
-<a href="http://159.89.157.101/wenzhao/index.html"><img src="logo/wenzhao.png" width="30%" alt="文
-昭谈古论今"/></a>
-<a href="http://159.89.157.101/today-in-history/index.html"><img src="logo/jiangfeng.png" width="30%" alt="历史上的今天"/></a>
-<a href="http://159.89.157.101/teahouse/index.html"><img src="logo/teahouse.png" width="30%" alt="老北京茶馆"/></a>
-<a href="http://159.89.157.101/ntdtv-comedy/index.html"><img src="logo/ntdtv-comedy.png" width="30%" alt="大陆新闻解读"/></a>
-<a href="http://159.89.157.101/ntdtv-news/index.html"><img src="logo/ntdtv-news.png" width="30%" alt="中国禁闻"/></a>
-<a href="http://159.89.157.101/ntdtv-rdhd/index.html"><img src="logo/ntdtv-rdhd.png" width="30%" alt="热点互动"/></a>
-<a href="http://159.89.157.101/news-insight/index.html"><img src="logo/news-insight.png" width="30%" alt="新闻看点"/></a>
-</div>
+		<title>Tabagotchi by Breather</title>
 
-</body>
+		<!-- Bootstrap -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="http://tabagotchi.com/favicon.png" sizes="32x32">
+
+
+		<style type="text/css">
+			#htmlToothbrush #bodyToothbrush .parentToothbrush .bilibili-player-video {
+				margin: 0 !important;
+			}
+
+			#htmlToothbrush,
+			#bodyToothbrush {
+				overflow: hidden !important;
+				zoom: 100% !important;
+			}
+
+			#htmlToothbrush #bodyToothbrush .parentToothbrush {
+				overflow: visible !important;
+				z-index: auto !important;
+				transform: none !important;
+				-webkit-transform-style: flat !important;
+				transition: none !important;
+				contain: none !important;
+			}
+
+			#htmlToothbrush #bodyToothbrush .absoluteToothbrush {
+				position: absolute !important;
+			}
+
+			#htmlToothbrush #bodyToothbrush .playerToothbrush {
+				position: fixed !important;
+				top: 0px !important;
+				left: 0px !important;
+				width: 100vw !important;
+				height: 100vh !important;
+				max-width: none !important;
+				max-height: none !important;
+				min-width: 0 !important;
+				min-height: 0 !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				z-index: 2147483647 !important;
+				border: none !important;
+				background-color: #000 !important;
+				transform: none !important;
+			}
+
+			#htmlToothbrush #bodyToothbrush .parentToothbrush video {
+				object-fit: contain !important;
+			}
+
+			#htmlToothbrush #bodyToothbrush .parentToothbrush .videoToothbrush {
+				width: 100vw !important;
+				height: 100vh !important;
+			}
+
+			#playerControlBtn {
+				text-shadow: none;
+				visibility: hidden;
+				opacity: 0;
+				display: none;
+				transition: all 0.5s ease;
+				cursor: pointer;
+				font: 12px "微软雅黑";
+				margin: 0;
+				width: 64px;
+				height: 20px;
+				line-height: 20px;
+				border: none;
+				text-align: center;
+				position: fixed;
+				z-index: 2147483647;
+				background-color: #27A9D8;
+				color: #FFF;
+			}
+
+			#playerControlBtn:hover {
+				visibility: visible;
+				opacity: 1;
+				background-color: #2774D8;
+			}
+
+			#picinpicBtn {
+				text-shadow: none;
+				visibility: hidden;
+				opacity: 0;
+				display: none;
+				transition: all 0.5s ease;
+				cursor: pointer;
+				font: 12px "微软雅黑";
+				margin: 0;
+				width: 53px;
+				height: 20px;
+				line-height: 20px;
+				border: none;
+				text-align: center;
+				position: fixed;
+				z-index: 2147483647;
+				background-color: #27A9D8;
+				color: #FFF;
+			}
+
+			#picinpicBtn:hover {
+				visibility: visible;
+				opacity: 1;
+				background-color: #2774D8;
+			}
+
+			#leftFullStackButton {
+				display: none;
+				position: fixed;
+				width: 1px;
+				height: 100vh;
+				top: 0;
+				left: 0;
+				z-index: 2147483647;
+				background: #000;
+			}
+
+			#rightFullStackButton {
+				display: none;
+				position: fixed;
+				width: 1px;
+				height: 100vh;
+				top: 0;
+				right: 0;
+				z-index: 2147483647;
+				background: #000;
+			}
+		</style>
+		<script id="picviewer-page-script">(function(messageID){
+                var frameID=Math.random();
+                var frames={
+                    top:window.top,
+                };
+
+                window.addEventListener('message',function(e){
+                    var data=e.data;
+                    if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+                    var source=e.source;
+                    if(source===window){//来自contentscript,发送出去,或者干嘛。
+                        if(data.to){
+                            data.from=frameID;
+                            frames[data.to].postMessage(data,'*');
+                        }else{
+                            switch(data.command){
+                                case 'getIframeObject':{
+                                    var frameWindow=frames[data.windowId];
+                                    var iframes=document.getElementsByTagName('iframe');
+                                    var iframe;
+                                    var targetIframe;
+                                    for(var i=iframes.length-1 ; i>=0 ; i--){
+                                        iframe=iframes[i];
+                                        if(iframe.contentWindow===frameWindow){
+                                            targetIframe=iframe;
+                                            break;
+                                        };
+                                    };
+                                    var cusEvent=document.createEvent('CustomEvent');
+                                    cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+                                    document.dispatchEvent(cusEvent);
+                                }break;
+                            };
+                        };
+
+                    }else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+                        frames[data.from]=source;
+                    };
+                },true)
+            })("pv-0.5106795670312598")</script>
+		<style type="text/css">
+			#pv-float-bar-container {
+				position: absolute;
+				z-index: 9999999998;
+				padding: 5px;
+				margin: 0;
+				border: none;
+				opacity: 0.6;
+				line-height: 0;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
+				display: none;
+			}
+
+			#pv-float-bar-container:hover {
+				opacity: 1;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button {
+				vertical-align: middle;
+				cursor: pointer;
+				width: 18px;
+				height: 18px;
+				padding: 0;
+				margin: 0;
+				border: none;
+				display: inline-block;
+				position: relative;
+				box-shadow: 1px 0 3px 0px rgba(0, 0, 0, 0.9);
+				background: transparent center no-repeat;
+				background-size: 100% 100%;
+				background-origin: content-box;
+				-webkit-transition: margin-right 0.15s ease-in-out, width 0.15s ease-in-out, height 0.15s ease-in-out;
+				transition: margin-right 0.15s ease-in-out, width 0.15s ease-in-out, height 0.15s ease-in-out;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button:not(:last-child) {
+				margin-right: -14px;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button:first-child {
+				z-index: 4;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button:nth-child(2) {
+				z-index: 3;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button:nth-child(3) {
+				z-index: 2;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button:last-child {
+				z-index: 1;
+			}
+
+			#pv-float-bar-container:hover>.pv-float-bar-button {
+				width: 24px;
+				height: 24px;
+			}
+
+			#pv-float-bar-container:hover>.pv-float-bar-button:not(:last-child) {
+				margin-right: 4px;
+			}
+
+			#pv-float-bar-container .pv-float-bar-button-actual {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFQkE5RjA0RDk2MzhFMjExQTU0REJGNDRCQTFCOUNERSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozOEE0N0FDMTNENjgxMUUyOUQ4REU1MDlFRDYwNTkzOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozOEE0N0FDMDNENjgxMUUyOUQ4REU1MDlFRDYwNTkzOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkVCQTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkVCQTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+nuhUUAAAAVFJREFUeNq01bGqglAYB/BuiQ0hDU26aTgYtES74As4iG/gQziIbyAStgu2NhQtvUGk6Au4OTg4qCjk5ulc4l6sa/eCx/sfDpzjxw/9OB9+AAAGvaQXCCLDQU/5N2i1Wl0uF1EUkXq0WCyKogiCoAvShE6nE9wahoHabEEQ4JrnOWqPqqqCK8dxqPdot9vBbVmWs9kMqUcMw2RZBk8cx0GCHt91PB7TNNV1HQn6M9PpFBUaj8f7/R7We55HUVR3yLIs8JXr9ToajbpA6/W6rmvQiKIoXaDz+QyeE0URhmHt0Hw+930/DMPlctlU4Ay+vM4jsiy3QARBQOJRkSQJTdPf0GazAW05HA4tkGmazSLXdXEc/xyi4TCO41bodrtNJpMniCRJePpSp2kafMTzPHgfSZKeIFVVfxbBGWZZdrvd/gLZtt3xZr8bEayvH8ldgAEAjySkPffpTOwAAAAASUVORK5CYII=");
+			}
+
+			#pv-float-bar-container .pv-float-bar-button-search {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAqFBMVEUAAAD///8KCgq/v7/MzMwFBQXj4+OTk5P9/f2mpqakpKSVlZWMjIyJiYkuLi4qKiokJCQZGRn5+fny8vLd3d3c3NzS0tLOzs7Dw8O7u7u3t7d1dXVubm4ODg719fXn5+fa2trW1tbQ0NDJycnGxsaysrKbm5uPj496enp5eXk9PT03NzcjIyMWFhYRERH29vbq6uqsrKyenp6Ojo5kZGRCQkIzMzMmJib+wYUxAAAA/UlEQVQoz53R527CUAyGYb9JyCIkbMhi79Xd3v+d1ZymAqEiVXx/ju3nj3Us3Ikgf+Yf0MzTXtfeJDdgNTqYPHmna2gtgH4QDM5P8wKtGQw/alrtbOgdfqGmnXcei9YROFYFG6jrqEjTXEdv0PiBwwi7JtYSwFbJaMcGIkaxyDt0J1Do4h1WBrqEIvJCr7Rm2FqucA24vGq3ZCoyZ6ilx9hAnY6uXoAzh60u/0xoIGmTiVhDUCtFAvxPAxKZBU8NZ7A+iuRmeQOWA5FU2UK/rEC+XMj2ookDGCeXT0ym4C/qnt2GSXz97cfQx8QPWzeH2q8d1x14u6p96OZ38g2yyQ1gIwkXlgAAAABJRU5ErkJggg==");
+			}
+
+			#pv-float-bar-container .pv-float-bar-button-gallery {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTEwMDAwRUIzOEEwMTFFMjhEOEM5NkVGODMwQkUyRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTEwMDAwRUMzOEEwMTFFMjhEOEM5NkVGODMwQkUyRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMTAwMDBFOTM4QTAxMUUyOEQ4Qzk2RUY4MzBCRTJGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxMTAwMDBFQTM4QTAxMUUyOEQ4Qzk2RUY4MzBCRTJGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvbSbv8AAAD8SURBVHjarJVBDkQwFIZ10q0DWNq6hEOIu1iIOwh7V3AC1hZcwC1I2HnTmWbedMqUVv+ElPZ9/veirwQAHCuyAmIQaoYjhEhvqGJOKwlqliZfKX6bnnq+6IveKb/oi16s5amvh2NJKtA0TcMwWAC5rtu2rQUQk+d5eltkf+eDeZ4vhqscBUHQNE2WZXcdaYU/tMpRFAW81XXdX2SSJKeOtm2Dj+SEcMTFfOGivu/HcRRLBoLiOD4AIR59sZ+IB/i+z2fzPBdBdV2rQOhrWRZ8TNM0DEPYKYqiY5DkC7Wua1mWe1BVVQgir+t3rxu03W/PNushcmOzcpA8BRgAZvU/uPa6ZfkAAAAASUVORK5CYII=");
+			}
+
+			#pv-float-bar-container .pv-float-bar-button-current {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkFGMjYxQkQzOEEwMTFFMkJBMzdENzI0QkVEMjM3NjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkFGMjYxQkUzOEEwMTFFMkJBMzdENzI0QkVEMjM3NjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyQUYyNjFCQjM4QTAxMUUyQkEzN0Q3MjRCRUQyMzc2OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyQUYyNjFCQzM4QTAxMUUyQkEzN0Q3MjRCRUQyMzc2OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkXfwy0AAADoSURBVHjaYvpPJcDCwMDAyMjIQBkAGsTEQCVANYNY0FxIkmbkMGHBI0cwXGjiNewGffr06dy5c1QwiJeXd//+/dSJNUlJSZLTEiYbyPj8+TNJGrG7SEtLa9++fXV1dZS6iAyNxEb/5MmTIZnz5MmTFLno379/8IxOgovOnj17+/Zt5CBDTvGhoaFEuQiYiCA2KyoqQsQnTpyIXPRs2LABi0Y0PjD5fPv2Da6npqbG3t4esxgLDg4mYFBFRQWyhu/fv0+ZMgXToPnz56NpZARhmP/JLkagRS0ZZQgNS0iqFrWkBg1WABBgAMViMFcYqRWbAAAAAElFTkSuQmCC");
+			}
+
+			#pv-float-bar-container .pv-float-bar-button-magnifier {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFOUE5RjA0RDk2MzhFMjExQTU0REJGNDRCQTFCOUNERSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2OTVBMUFDOTM4QTMxMUUyQjU3OEY5MDVFQzA5NDg3NiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2OTVBMUFDODM4QTMxMUUyQjU3OEY5MDVFQzA5NDg3NiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU4REEyMTVBQTMzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU5QTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+c9dtRgAAAdpJREFUeNqsVS3LwlAUdjIFgx9hCyJDRPEfKIqMBe2GMbCYzDMb/BN+NAWjRottRsMQ1gWLwWawqEFh78M72a53H4LshnF37nOenfOcc+4Y0zQjoaxQiEASpUw8z/d6veVyeTwen88nntjDAnswFwMyhmGsl2azqarq5XLRNG2/359Op3w+X6lUWq0Wx3GTyWS73fqmZacGFvi3221PKOw4BcaP6B0RIp/NZovFAuH4BS+KYrfbzeVy6XTayeg/GyciqDCfz7FpNBoBQgADpLtQjthQAZFTbqvVirIAA6TnN95EUBTqkge1Wi2TyVBoYIAMqhoqnUgkXq8XUtvtdogFZXo8HrfbDaBOp2OhWZaFMRaLORpTGqFfisUiqRE2m82G+iwwQAZp5BlzPB6nLG4FaI3cKhqG0e/3BUEgjZ41+QgPfbRer9F1AeXHKTDkrJCp0Z09GAz8WJDU4XAAXtd1NxFrQ605Go/HpVLJc9ZSqVS5XAamWq1+v0au16s1/efzGd1gT3+9XjeJpSiKb2okbzKZtBwKhYJlH41GJBHE+k6UzWbv97vtMxwOJUkyXUuW5S9E0Jt0QCtPp1M3Ea4KkujjYvvh5rVHhPU8+GFFIyEtNqwfyZ8AAwDsuJgtGILBsQAAAABJRU5ErkJggg==");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7LNZ38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div class="container">
+			<div class="row upper">
+				<div class="breather">
+					<a href="http://breather.com/"><img src="./logo/breather_pixel.png"></a>
+				</div>
+
+				<div class="logo">
+					<img src="./logo/logo.png">
+				</div>
+			</div>
+
+			<div class="row instructions">
+				<div class="col-md-6 directions">
+					<p>fewer tabs =</p>
+					<img src="./logo/happy.gif">
+				</div>
+				<div class="col-md-6 directions">
+					<p>more tabs =</p>
+					<img src="./logo/hungry.gif">
+				</div>
+			</div>
+
+			<div class="row middle">
+				<div class="col-md-3 evolve">
+					<img src="./logo/evolution.png">
+				</div>
+				<div class="col-md-6 demo">
+					<img src="./logo/tabagif.gif">
+				</div>
+				<div class="col-md-3 faq">
+					<a class="btn-open">
+						<blink><img src="./logo/question.png"></blink>
+					</a>
+				</div>
+			</div>
+
+			<div class="row download">
+				<a href="https://www.google.com/ncr" target="_blank">
+					<img src="./logo/button.png"> 
+				</a>
+			</div>
+
+			<div class="row footer">
+				<p>Find your focus with fewer <br>distractions. Try Breather.</p>
+				<a href="http://breather.com/" target="_blank"><img src="./logo/breatherlogo.png"></a>
+			</div>
+
+			<!-- FAQ -->
+			<!--    <div class = "overlayyy">
+      <div class="buttonn">
+          <a class="btn-open" href="#"></a>
+        </div>
+    </div> -->
+
+			<div class="overlay">
+				<div class="wrapp">
+
+					<div class="quest">
+						<p class="question">What is this?</p>
+						<p class="answer">It’s a Tamagotchi-inspired chrome extension designed to help you declutter your browser and
+							eliminate tab anxiety.
+						</p>
+					</div>
+
+					<div class="quest">
+						<p class="question">Why did you create this?</p>
+						<p class="answer">It's really easy for your tab count to get out of control, so we created a friend to help you
+							keep your focus while you work.
+						</p>
+					</div>
+
+					<div class="quest">
+						<p class="question">How does this work?</p>
+						<p class="answer">The fewer tabs you have open, the happier and healthier your "Tabagotchi" will be! For every
+							tab you have open, your Tabagotchi loses 4 HP, making it angrier and sicker.</p>
+					</div>
+
+					<div class="quest">
+						<p class="question">How do I evolve my Tabagotchi?</p>
+						<p class="answer">For every hour you spend with 5 or less tabs open, you'll fill one block in the evolution
+							progress meter. Do this ten times, and you'll evolve your Tabagotchi!</p>
+					</div>
+
+
+					<div class="quest">
+						<p class="question">Who’s behind this?</p>
+						<p class="answer">We’re <a href="http://breather.com/" target="_blank">Breather</a>, a network of private,
+							professional meeting rooms designed for work, meetings and to focus. We have over 400 spaces across 10 global
+							markets including: New York, London, LA and San Francisco. <br><br>We’re all about helping people find their
+							focus so they can do their best work.</p>
+					</div>
+					<!-- <img src="img/breatherlogo.png"> -->
+				</div>
+			</div>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./js/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/main.js"></script>
+
+		<tbdiv id="picinpicBtn"></tbdiv>
+		<tbdiv id="playerControlBtn"></tbdiv>
+		<tbdiv id="leftFullStackButton"></tbdiv>
+		<tbdiv id="rightFullStackButton"></tbdiv><span id="pv-float-bar-container" style="display: none; opacity: 1; top: 75.625px; left: 681.75px;"><span
+			 class="pv-float-bar-button pv-float-bar-button-actual" title="查看原始(A)" style="display: none;"></span><span class="pv-float-bar-button pv-float-bar-button-current"
+			 title="查看当前(C)"></span><span class="pv-float-bar-button pv-float-bar-button-gallery" title="查看库(G)"></span><span
+			 class="pv-float-bar-button pv-float-bar-button-magnifier" title="放大镜(M)" style="display: none;"></span></span>
+	</body>
 </html>
-
